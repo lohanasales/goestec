@@ -1,0 +1,16 @@
+section.title-page {
+    padding: 30px;
+    width: 100%;
+    min-height: 300px;
+}
+
+section.title-page h2 {
+    color: purple;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+section.title-page p {
+    text-align: center;
+    font-family: 'open sans', sans-serif;
+}

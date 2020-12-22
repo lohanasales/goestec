@@ -1,0 +1,353 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', Sans-serif;
+}
+
+/*classes auxiliares*/
+
+.container {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+.clear {clear: both;}
+
+.w50 {
+	width: 50%;
+	float: left;
+}
+
+.w33 {
+	width: 33.3%;
+	float: left;
+}
+
+.center {
+	text-align: center;
+}
+
+/*classes do meu site*/
+
+header {
+	padding: 8px 0;
+}
+
+.logo {
+	float: left;
+}
+
+.logo h2{
+	font-weight: normal;
+	font-size: 23px;
+}
+
+/* classes mobile */
+nav.menu-mobile {
+	display: none;
+	float: right;
+}
+
+nav.menu-mobile h2 {
+	cursor: pointer;
+}
+
+nav.menu-mobile ul{
+	display: none;
+	width: 100%;
+	background: white;
+	position: absolute;
+	left: 0;
+	top: 37px;
+	z-index: 999;
+	text-align: center;
+}
+
+nav.menu-mobile li{
+	padding: 8px 0;
+	border-bottom: 1px solid black;
+}
+
+nav.menu-mobile li.selected {
+	background: rgb(225,225,225);
+}
+
+nav.menu-mobile a {
+	display: block;
+	color: black;
+	text-decoration: none;
+}
+
+/* classes desktop */
+
+nav.menu-desktop li.selected {
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+nav.menu-desktop {
+	float: right;
+}
+
+nav.menu-desktop ul {
+	position: relative;
+	top: 8px;
+}
+
+nav.menu-desktop li {
+	padding: 0 10px;
+	font-weight: lighter;
+	display: inline-block;
+}
+
+nav.menu-desktop a{
+	color: black;
+	text-decoration: none;
+}
+
+nav.menu-desktop a:hover{text-decoration: underline;}
+
+/* sessão main */
+
+section.main-bg *{
+	box-sizing: border-box;
+	width: 100%;
+	height: 50%;
+}
+
+section.diferenciais {
+	padding: 30px 0;
+	text-align: center;
+}
+
+.line-text {
+	position: relative;
+	display: inline-block;
+	
+}
+.line-text > div {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: inline-block;
+	color: pink;
+	width: 50px;
+	height: 3px;
+	background: purple;
+
+}
+
+.line-text h2 {
+	font-weight: normal;
+	font-size: 27px;
+	color: #33B5FF;
+}
+
+.icones-diferenciais{
+	margin-top: 35px;
+}
+
+.box-icone-single {
+	float: left;
+	width: 33.3%;
+	padding: 0 10px;
+	margin-bottom: 20px;
+}
+
+.box-icone-single h2 {
+	color: pink;
+	font-size: 40px;
+}
+
+.box-icone-single p {
+	color: #646464;
+	font-weight: lighter;
+	font-size: 16px;
+} 
+
+/* sessão sobre equipe */
+
+section.sobre-equipe {
+	padding: 30px 0;
+}
+
+section.sobre-equipe > .container {
+	display: flex;
+	background: rgb(225,225,225);
+	flex-wrap: wrap;
+}
+ 
+.equipe-container {
+	width: 50%
+}
+
+.sobre-container {
+	width: 50%
+}
+
+.sobre-container p {
+	color: black;
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+.avatar-box {
+	margin-top: 15px;
+}
+.img-avatar {
+	display:  inline-block;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background-size: 100% 100%;
+}
+
+.descricao-avatar {
+	padding: 10px;
+	width: calc(100% - 70px);
+	display: inline-block;
+}
+
+.descricao-avatar h3 {
+	color: rgb(30,30,30);
+	font-weight: normal;
+	font-style: italic;
+}
+
+/* sessão inscrição */
+
+section.inscricao {
+	background: pink;
+	padding: 10px 0;
+}
+
+.inscricao-form input[type=text] {
+	width: 250px;
+	height: 30px;
+	background: white;
+	border: 1px solid pink;
+	display: inline-block;
+}
+
+.inscricao-form input[type=submit] {
+	width: calc(100%-120px);
+	height: 30px;
+	background: rgb(225,225,225);
+	display: inline-block;
+	cursor: pointer;
+	border: 0;
+	font-weight: normal;
+	font-size: 18px; 
+}
+
+/* sessão dos cartões */
+
+section.cards {
+	padding: 30px 0;
+}
+
+.card-single {
+	width: 33.3%;
+	float: left;
+	padding: 50px;
+}
+
+.card-single img {
+	width: 100%;
+}
+
+.card-single h3 {
+	margin-top: 5px;
+	font-weight: normal;
+	font-size: 19px;
+}
+
+.card-single p {
+	margin: 10px 0;
+	font-weight: lighter;
+	font-size: 16px;
+	padding-bottom: 20px;
+	border-bottom: 2px solid purple;
+}
+
+/* rodapé */
+
+footer.footer1 {
+	background: pink;
+	padding: 20px 0;
+	color: purple;
+}
+
+footer.footer1 h3 {
+	font-weight: normal;
+	font-size: 23px;
+}
+
+footer.footer1 p {
+	margin-top: 8px;
+	font-weight: lighter;
+}
+
+footer.footer1 a{
+	color: purple;
+	text-decoration: none;
+}
+
+div.group-icons a {
+	font-size: 18px;
+	display: inline-block;
+	margin: 15px 10px;
+}
+
+footer.footer2 {
+	color: purple;
+	text-align: center;
+	padding: 15px 0;
+	background: hotpink;
+
+
+}
+
+@media screen and (max-width: 768px) {
+	
+	footer.footer1 {
+		text-align: center;
+	}
+	.w50,.w33 {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.box-icone-single {
+		width: 100%;
+	}
+
+	.equipe-container {
+	width: 100%
+	}
+	
+	.sobre-container {
+	width: 100%
+	}
+
+	.card-single {
+	width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+
+	nav.menu-desktop{
+		display: none;
+	}
+
+	nav.menu-mobile{
+		display: block;
+	}
+	.card-single {
+		padding: 10px;
+	}
+}
